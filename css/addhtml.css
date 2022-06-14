@@ -1,0 +1,60 @@
+.row {
+    background: none;
+}
+
+.row {
+
+
+    background   : rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow   : 0.3em 0.3em 0.7em #00000015;
+
+
+    border: rgb(250, 250, 250) 0.2em solid;
+}
+
+.container {
+    margin-top: 6rem;
+}
+
+.row_a {
+    padding-left: 2rem;
+    background  : none;
+    border      : none;
+    box-shadow  : none;
+}
+
+textarea {
+
+    margin-bottom: 15px;
+}
+
+.data-bs {
+    color : red;
+    cursor: pointer
+}
+
+.button_t {
+    WIDTH : 8.79REM;
+    BORDER: NONE;
+}
+
+.submit_a {
+    WIDTH        : 8.79REM;
+    border-radius: 0.3REM;
+    BORDER       : NONE;
+}
+
+footer {
+    text-align : center;
+    margin-top : 10REM;
+    WIDTH      : 100%;
+    BACKGROUND : WHITE;
+    HEIGHT     : 6REM;
+    PADDING-TOP: 3REM;
+}
+/* 输入框placeholder属性 */
+input::-webkit-input-placeholder {
+    font-size: 0.6rem;
+  
+}

@@ -1,0 +1,36 @@
+.container {
+    MARGIN-BOTTOM: 1REM;
+}
+
+.container .form {
+    LEFT: 69REM;
+}
+
+.email {
+    overflow: hidden;
+}
+
+.email span {
+    font-size: 0.3rem;
+}
+
+.modify {
+    background-color: green;
+}
+
+.del {
+    margin-top: 1px;
+}
+
+.page a {
+    text-align: right
+}
+
+footer {
+    text-align : center;
+    margin-top : 1REM;
+    WIDTH      : 100%;
+    BACKGROUND : WHITE;
+    HEIGHT     : 6REM;
+    PADDING-TOP: 3REM;
+}

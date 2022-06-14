@@ -1,0 +1,62 @@
+.container {
+    margin-top: 1rem
+}
+
+textarea {
+    margin-bottom: 15px;
+    height       : 11.5rem;
+    width        : 100%;
+}
+
+#burow {
+    text-align    : right;
+    padding-bottom: 1REM;
+}
+
+#burow-t {
+    WIDTH        : 8.79REM;
+    BORDER       : NONE;
+    border-radius: 0.3REM;
+    margin-left  : 0.1rem
+}
+
+#modifymsg {
+    WIDTH        : 8.79REM;
+    BORDER       : NONE;
+    border-radius: 0.3REM;
+    margin-left  : 0.1rem
+}
+
+#burow-f {
+    WIDTH        : 8.79REM;
+    border-radius: 0.3REM;
+    BORDER       : NONE;
+    margin-left  : 0.1rem
+}
+
+.qx {
+    margin-top   : 1rem;
+    WIDTH        : 8.79REM;
+    BORDER       : NONE;
+    border-radius: 0.3REM;
+    margin-left  : 0.1rem
+}
+
+.xg {
+    margin-top   : 1rem;
+    WIDTH        : 8.79REM;
+    BORDER       : NONE;
+    border-radius: 0.3REM;
+    margin-left  : 0.1rem
+}
+footer{
+    text-align: center;
+    margin-top: 11.8REM;
+    WIDTH: 100%;
+    BACKGROUND: WHITE;
+    HEIGHT: 6REM;
+    PADDING-TOP: 3REM;
+}
+.footer_A{
+    margin-top: 8REM;
+}

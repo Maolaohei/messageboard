@@ -1,0 +1,348 @@
+* {
+  margin : 0px;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  border-style: none;
+}
+
+body {
+  background-color: #f2f2f2;
+  background   : url('../img/BD.jpg') no-repeat  ;
+  background-size : 100% 100%;
+}
+
+.bg {
+  border       : 2px solid #ccc;
+  border-radius: 5px;
+  background   : rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow   : 0.3em 0.3em 0.7em #00000015;
+  transition   : border 0.5s
+}
+
+.onebg {
+  background   : rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow   : 0.3em 0.3em 0.7em #00000015;
+  transition   : border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border       : rgb(250, 250, 250) 0.2em solid;
+}
+
+.serch {
+  text-align  : right;
+  margin-right: 14%;
+}
+
+.col-6 p {
+  margin-bottom: 0.1rem;
+  font-size    : 15px;
+}
+
+.page {
+  margin-top : 2rem;
+  border     : 1px solid #ccc;
+  width      : 24rem;
+  height     : 3rem;
+  margin-left: 66rem;
+  background : #1479d7;
+}
+
+.buttom {
+  border          : 1px solid blue;
+  background-color: blue;
+  margin-left     : 1px;
+  border-radius   : 5px;
+  text-align      : center;
+  margin-top      : 4px;
+}
+
+
+/* 修改按钮 */
+.modify,
+.del {
+  display: inline-block;
+  width  : 33%;
+}
+
+/* 删除按钮 */
+.noselect {
+  width : 70px;
+  height: 36px;
+  cursor: pointer;
+
+  align-items  : center;
+  background   : red;
+  border       : none;
+  border-radius: 5px;
+  box-shadow   : 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background   : #e62222;
+}
+
+.noselect,
+.noselect span {
+  transition: 200ms;
+}
+
+.noselect .text {
+  transform  : translateX(35px);
+  color      : white;
+  font-weight: bold;
+}
+
+
+.noselect svg {
+  width: 15px;
+  fill : #eee;
+}
+
+
+
+.noselect:hover .text {
+  color: transparent;
+}
+
+
+
+
+
+
+/* 标题栏 */
+.btn-cssbuttons {
+  position     : relative;
+  padding      : 16px 32px;
+  font-family  : Roboto, sans-serif;
+  font-weight  : 500;
+  font-size    : 16px;
+  line-height  : 1;
+  color        : white;
+  background   : none;
+  border       : none;
+  outline      : none;
+  overflow     : hidden;
+  cursor       : pointer;
+  filter       : drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
+  transition   : 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  margin-bottom: 2rem;
+  width        : 100%;
+}
+
+.btn-cssbuttons::before {
+  position     : absolute;
+  content      : "";
+  top          : 0;
+  left         : 0;
+  z-index      : -1;
+  width        : 100%;
+  height       : 100%;
+  background   : #275efe;
+  border-radius: 24px;
+  transition   : 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn-cssbuttons span,
+.btn-cssbuttons span span {
+  display       : inline-flex;
+  vertical-align: middle;
+  transition    : 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn-cssbuttons span {
+  transition-delay: 0.05s;
+}
+
+.btn-cssbuttons span:first-child {
+  padding-right: 7px;
+}
+
+.btn-cssbuttons span span {
+  margin-left     : 8px;
+  transition-delay: 0.1s;
+}
+
+.btn-cssbuttons ul {
+  position       : absolute;
+  top            : 50%;
+  left           : 0;
+  right          : 0;
+  display        : flex;
+  margin         : 0;
+  padding        : 0;
+  list-style-type: none;
+  transform      : translateY(-50%);
+}
+
+.btn-cssbuttons ul li {
+  flex: 1;
+}
+
+.btn-cssbuttons ul li a {
+  display       : inline-flex;
+  vertical-align: middle;
+  transform     : translateY(55px);
+  transition    : 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn-cssbuttons ul li a:hover {
+  opacity: 0.5;
+}
+
+.btn-cssbuttons:hover::before {
+  transform: scale(1.2);
+}
+
+.btn-cssbuttons:hover span,
+.btn-cssbuttons:hover span span {
+  transform: translateY(-55px);
+}
+
+.btn-cssbuttons:hover ul li a {
+  transform: translateY(0);
+}
+
+.btn-cssbuttons:hover ul li:nth-child(1) a {
+  transition-delay: 0.15s;
+}
+
+.btn-cssbuttons:hover ul li:nth-child(2) a {
+  transition-delay: 0.2s;
+}
+
+.btn-cssbuttons:hover ul li:nth-child(3) a {
+  transition-delay: 0.25s;
+
+}
+
+/* 搜索框 */
+
+
+.form button {
+  border    : none;
+  background: none;
+  color     : #8b8ba7;
+}
+
+.form {
+  position          : relative;
+  width             : 200px;
+  height            : 40px;
+  display           : -webkit-box;
+  display           : -ms-flexbox;
+  display           : flex;
+  -webkit-box-align : center;
+  -ms-flex-align    : center;
+  align-items       : center;
+  padding-inline    : 0.8em;
+  border-radius     : 30px;
+  -webkit-transition: border-radius 0.5s ease;
+  transition        : border-radius 0.5s ease;
+  background        : #fff;
+}
+
+.input {
+  font-size       : 0.9rem;
+  background-color: transparent;
+  width           : 100%;
+  height          : 100%;
+  padding-inline  : 0.5em;
+  padding-block   : 0.7em;
+  border          : none;
+}
+
+.form:before {
+  content           : "";
+  position          : absolute;
+  background        : 2px;
+  width             : 100%;
+  height            : 2px;
+  left              : 0;
+  bottom            : 0;
+  border-radius     : 1px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition        : -webkit-transform 0.3s ease;
+  transition        : transform 0.3s ease;
+  transition        : transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.form:focus-within {
+  border-radius: 1px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form:focus-within:before {
+  -webkit-transform: scale(1);
+  -ms-transform    : scale(1);
+  transform        : scale(1);
+}
+
+.reset {
+  border    : none;
+  background: none;
+  opacity   : 0;
+  visibility: hidden;
+}
+
+
+input:not(:-moz-placeholder-shown)~.reset {
+  opacity   : 1;
+  visibility: visible;
+}
+
+input:not(:-ms-input-placeholder)~.reset {
+  opacity   : 1;
+  visibility: visible;
+}
+
+input:not(:placeholder-shown)~.reset {
+  opacity   : 1;
+  visibility: visible;
+}
+
+/* sizing svg icons */
+.form svg {
+  width     : 17px;
+  margin-top: 3px;
+}
+
+.bg-msg {
+  margin-top: 6REM;
+  HEIGHT    : 19REM;
+  WIDTH     : 30REM;
+  MARGIN    : 0 AUTO;
+  margin-top: 6REM;
+}
+
+/* 分页 */
+.page {
+  padding-left: 1rem;
+  margin-top: 1rem;
+  padding-top: 0.6rem;
+  border: 1px solid #ccc;
+  width: 26rem;
+  margin-left: 63rem;
+  background: #1479d7;
+  border-radius: 5rem;
+
+}
+
+.page a {
+  background   : transparent;
+  padding-right: 2px;
+  border       : 1px solid transparent;
+  color        : #fff;
+
+  text-decoration: none;
+}
+
+.page a:hover {
+  background-color: #cbe1ed;
+  border          : 1px solid #ccc;
+}
